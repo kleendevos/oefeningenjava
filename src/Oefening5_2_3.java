@@ -13,10 +13,10 @@ public class Oefening5_2_3 {
         double urengewerkt = sc.nextDouble();
         System.out.println("GEWERKTE MINUTEN: ");
         double minutengewerkt = sc.nextDouble();
-        System.out.println("UURLOON: ")
+        System.out.println("UURLOON: ");
         int uurloon = sc.nextInt();
         
-        double totaalgewerkteuren = ((urengewerkt * 60) + minutengewerkt)/60
+        double totaalgewerkteuren = ((urengewerkt * 60) + minutengewerkt)/60;
 
 
         if (totaalgewerkteuren<=40){
