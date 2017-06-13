@@ -2,7 +2,7 @@
 public class Oefening1_5_2 {
     public static void main (String [] args){
 
-        double afstand = 14;
+        double afstand = 16;
         double minuten = 45;
         double seconden = 30;
 
@@ -11,6 +11,6 @@ public class Oefening1_5_2 {
         double eindresultaat = Mijlperuur.calculator(afstand,tijdinuren);
         double eindresultaatafgerond = Math.round (eindresultaat*100.0)/100.0;
 
-        System.out.println("Als een loper 14 km per uur loopt in 45 minuten en 30 seconden dan loopt hij "+ eindresultaatafgerond + " mijl/uur");
+        System.out.println("Als een loper "+ afstand + " km loopt in " + minuten + " minuten en " + seconden + " seconden dan loopt hij "+ eindresultaatafgerond + " mijl/uur");
     }
 }
