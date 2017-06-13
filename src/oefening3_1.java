@@ -1,26 +1,16 @@
 import java.util.Scanner;
 
-/**
- * Created by kathleendevos on 12/06/17.
- */
 public class oefening3_1 {
     public static void main (String [] args) {
         System.out.println("Voer 3 verschillende getallen in:");
         Scanner s = new Scanner (System.in);
-        int a;
-        a = s.nextInt();
+        int a= s.nextInt();
+        int b= s.nextInt();
+        int c= s.nextInt();
 
-        Scanner t = new Scanner (System.in);
-        int b;
-        b = t.nextInt();
-
-        Scanner u = new Scanner (System.in);
-        int c;
-        c = u.nextInt();
-
-       double som = a+b+c;
-       double average = som/3;
-       double product = a*b*c;
+        double som = a+b+c;
+        double average = som/3;
+        double product = a*b*c;
 
 
         System.out.println("Bewerkingen");

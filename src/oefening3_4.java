@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Created by kathleendevos on 12/06/17.
- */
 public class oefening3_4 {
     public static void main (String []algs){
 
@@ -14,8 +11,8 @@ public class oefening3_4 {
 
         System.out.println("NUMBER OF BISCUITS YOU ATE: ");
         Scanner input = new Scanner (System.in);
-        int N;
-        N = input.nextInt();
+        int N = input.nextInt();
+
 
         int calories = (N*calcookie);
 

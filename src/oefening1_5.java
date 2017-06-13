@@ -1,11 +1,9 @@
 import java.text.DecimalFormat;
 
-/**
- * Created by kathleendevos on 12/06/17.
- */
+
 public class oefening1_5 {
     public static void main (String [] args){
-        int distancek = 14;
+        double distancek = 14;
         double time = 45.5;
         double kperh = (distancek/time)*60;
         double mperh = (kperh/1.6);

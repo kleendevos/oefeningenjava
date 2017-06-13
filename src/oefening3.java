@@ -4,18 +4,13 @@ public class oefening3 {
     public static void main (String [] args){
         System.out.println("a = ");
         Scanner s = new Scanner (System.in);
-        int a;
-        a = s.nextInt();
-
+        int a = s.nextInt();
         System.out.println("b = ");
-        Scanner t = new Scanner (System.in);
-        int b;
-        b = t.nextInt();
-
-        System.out.println("b = ");
+        int b = s.nextInt();
+        System.out.println("c = ");
         Scanner l = new Scanner (System.in);
-        int c;
-        c = t.nextInt();
+        int c = s.nextInt();
+
 
         System.out.println (a+"+"+b+"+"+c+"="+(a+b+c));
 
