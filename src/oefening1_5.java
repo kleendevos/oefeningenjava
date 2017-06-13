@@ -7,8 +7,8 @@ public class oefening1_5 {
     public static void main (String [] args){
         int distancek = 14;
         double time = 45.5;
-        float kperh = (float) ((distancek/time)*60);
-        float mperh = (float) (kperh/1.6);
+        double kperh = (distancek/time)*60;
+        double mperh = (kperh/1.6);
 
         DecimalFormat f = new DecimalFormat("##.00");
 

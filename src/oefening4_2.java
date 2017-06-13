@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Created by kathleendevos on 12/06/17.
  */
 public class oefening4_2 {
-    public static void main (String [] algs){
+    public static void main (String [] args){
         double interest = 0.00417;
 
         System.out.println("MONTHLY SAVING: ");

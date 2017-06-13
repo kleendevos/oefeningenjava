@@ -2,7 +2,7 @@
  * Created by kathleendevos on 12/06/17.
  */
 public class oefening4_1 {
-    public static void main (String [] algs){
+    public static void main (String [] args){
         long secondsday = 86400;
         long birth = 7;
         long death = 13;
