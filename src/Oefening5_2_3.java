@@ -17,6 +17,7 @@ public class Oefening5_2_3 {
         int uurloon = sc.nextInt();
         
         double totaalgewerkteuren = ((urengewerkt * 60) + minutengewerkt)/60;
+        int uren = 40;
 
 
         if (totaalgewerkteuren<=40){
