@@ -4,8 +4,9 @@
 public class oefening5_3_5 {
     public static void main (String [] args){
 
-        int ntalrijen = 10;
-        int rij = 1;
+        int ntalrijen = 8;
+        int begin = 0;
+
 
 
         for (int i = ntalrijen; i > 0; i--) {
@@ -13,14 +14,20 @@ public class oefening5_3_5 {
             for (int j = 1; j <= i*2; j++)
                 System.out.print(" ");
 
-            for (int j = 1; j<=rij; j++)
-                System.out.print(j+ " ");
+            for (int j = 0; j<=begin; j++){
+                double kwadraat = Math.pow(2,j);
+                int kwadraatafgedrond = (int) Math.round(kwadraat);
+                System.out.print(kwadraatafgedrond + " ");
 
-            for (int j = rij-1; j>=1; j--)
-                System.out.print(j+ " ");
+
+            }
+
+            //for (int j = begin-1; j>=1; j--){
+                //System.out.print(Math.pow(2, j )+ " ");
+            //}
 
             System.out.println();
-            rij++;
+            begin++;
 
     }
 }}
