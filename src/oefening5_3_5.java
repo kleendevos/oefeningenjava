@@ -18,8 +18,6 @@ public class oefening5_3_5 {
                 double kwadraat = Math.pow(2,j);
                 int kwadraatafgedrond = (int) Math.round(kwadraat);
                 System.out.print(kwadraatafgedrond + " ");
-
-
             }
 
             //for (int j = begin-1; j>=1; j--){

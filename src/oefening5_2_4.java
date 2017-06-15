@@ -32,23 +32,31 @@ public class oefening5_2_4 {
         } else {
             if (taxable_income > 8681 && taxable_income <= 12360) {
                 double taxation = taxable_income * 0.30;
+                double netincome = taxable_income - taxation;
                 System.out.println("TAXATION: " + taxation);
+                System.out.println("MONTHLY NET INCOME: " + netincome);
 
             } else {
 
                 if (taxable_income > 12361 && taxable_income <= 20600) {
                     double taxation = taxable_income * 0.40;
+                    double netincome = taxable_income - taxation;
                     System.out.println("TAXATION: " + taxation);
+                    System.out.println("MONTHLY NET INCOME: " + netincome);
 
                 } else {
                     if (taxable_income > 20601 && taxable_income <= 37750) {
                         double taxation = taxable_income * 0.45;
+                        double netincome = taxable_income - taxation;
                         System.out.println("TAXATION: " + taxation);
+                        System.out.println("MONTHLY NET INCOME: " + netincome);
 
                     } else {
                         if (taxable_income > 37750) {
                             double taxation = taxable_income * 0.50;
+                            double netincome = taxable_income - taxation;
                             System.out.println("TAXATION: " + taxation);
+                            System.out.println("MONTHLY NET INCOME: " + netincome);
 
                         }
                     }
