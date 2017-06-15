@@ -1,3 +1,4 @@
+package be.vdab.bees;
 
 public class Beeworker {
 
@@ -24,7 +25,7 @@ public class Beeworker {
 
     public boolean gatherNectar (int howMuch){
         // static moet hierin niet vermeld worden!!!!
-        System.out.println("Beeworker "+ name + " is gathering some nectar");
+        System.out.println("be.vdab.bees.Beeworker "+ name + " is gathering some nectar");
         carriage += howMuch;
 
         if (carriage == capacity) {

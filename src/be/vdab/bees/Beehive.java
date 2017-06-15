@@ -1,3 +1,4 @@
+package be.vdab.bees;
 
 public class Beehive {
     public static void main(String[] args) {
