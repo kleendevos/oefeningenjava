@@ -16,6 +16,8 @@ public class Beehive {
 
         Beequeen q = new Beequeen();
 
+        System.out.println(q.getHunger());
+
         while (q.layeggs(10)) {
             System.out.println("lay other egg");
         }

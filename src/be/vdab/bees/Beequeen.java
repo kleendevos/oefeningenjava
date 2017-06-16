@@ -10,6 +10,16 @@ public class Beequeen {
     private int eggslayed = 0;
     private int procentpower = power - eggslayed;
 
+    public Beequeen() {
+        this.hunger = hunger;
+        this.power = power;
+        this.eggslayed = eggslayed;
+        this.procentpower = procentpower;
+    }
+
+    public int getHunger() {
+        return hunger;
+    }
 
     public boolean layeggs(int amount) {
 
