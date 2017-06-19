@@ -4,7 +4,7 @@
 public class oefening5_3_5 {
     public static void main (String [] args){
 
-        int ntalrijen = 7;
+        int ntalrijen = 12;
         int begin = 0;
 
 
@@ -30,4 +30,10 @@ public class oefening5_3_5 {
             begin++;
 
     }
+}
+
+public static void printpowerof (int base, int exponent) {
+    int kwadraat = (int) Math.pow(base, exponent);
+    System.out.print (kwadraat + " \t  ");
+
 }}

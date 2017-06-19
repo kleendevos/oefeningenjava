@@ -1,6 +1,6 @@
 package be.vdab.bees;
 
-public class Beeworker {
+public class Beeworker extends bee {
 
     //FIELD - MEMBER VARIABLE - INSTANCE VARIABLE
 
@@ -13,13 +13,15 @@ public class Beeworker {
 
     //CONSTRUCTOR
     public Beeworker(String name,int capacity, int carriage) {
+        super(name); // manier om constructor aan te roepen van de superklasse bij!
         this.capacity = capacity;
         this.carriage = carriage;
-        this.name = name;
+
     }
     
     public Beeworker (String name){
-        this.name = name;
+        super(name);
+
     }
 
 
