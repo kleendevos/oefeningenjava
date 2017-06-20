@@ -5,7 +5,7 @@ package be.vdab.shapes;
  */
 public class Circle extends Shape{
 
-    private double radius;
+    private double radius = 1.0;
 
     public Circle(double radius, String color, boolean filled) {
         super(color,filled);
@@ -39,6 +39,5 @@ public class Circle extends Shape{
 
     @Override
     public String toString() {
-        return "A Circle with radius " + radius + ", which is a sublass of " ;
-    }
+        return "A Circle with radius " + radius + ", which is a sublass of " + Shape.class + '\n';    }
 }

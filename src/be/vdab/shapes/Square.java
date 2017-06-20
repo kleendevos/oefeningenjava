@@ -3,16 +3,17 @@ package be.vdab.shapes;
 /**
  * Created by vdabcursist on 19/06/2017.
  */
-public abstract class Square extends Rectangle {
+public class Square extends Rectangle {
 
 
 
    public Square (double side){
-        super(side);
+        this.width = side;
+        this.length = side;
     }
 
-    public Square (double width,double length, String color, boolean filled){
-       super(width, length,color,filled);
+    public Square (double width, String color, boolean filled){
+       super(width,color,filled);
 
     }
 
@@ -29,6 +30,6 @@ public abstract class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return "A Square with side " + width + ", which is a subclas of" ;
+        return "A Square with side " + width + ", which is a subclas of " + Rectangle.class + '\n';
     }
 }

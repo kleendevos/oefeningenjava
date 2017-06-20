@@ -9,7 +9,7 @@ public class Rectangle extends Shape {
     public double length;
 
 
-    public Rectangle(double side) {
+    public Rectangle() {
 
     }
 
@@ -19,7 +19,7 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
-    public Rectangle (double width, double length, String color, boolean filled){
+    public Rectangle(double width, String color, boolean filled){
         super(color,filled);
         this.width=width;
         this.length=length;
@@ -53,6 +53,7 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Rectangle with "+ width + " and length" + length + "and witch is a subclass of " + Shape.class + '\n';
+
     }
 }

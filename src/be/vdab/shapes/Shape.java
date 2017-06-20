@@ -1,25 +1,21 @@
 package be.vdab.shapes;
 
-/**
- * Created by vdabcursist on 19/06/2017.
- */
 public class Shape {
 
     private String color;
     private Boolean filled;
 
     public Shape() {
-        this.color = "red";
+        this.color = "green";
         this.filled = true;
-    }
+        }
 
-
-    public Shape(String color, Boolean filled){
+    public Shape(String color, Boolean filled) {
         this.color = color;
         this.filled = filled;
     }
 
-    public String getColor (){
+    public String getColor() {
         return color;
     }
 
@@ -27,7 +23,7 @@ public class Shape {
         this.color = color;
     }
 
-    public Boolean getFilled() {
+    public Boolean isFilled() {
         return filled;
     }
 
@@ -37,6 +33,6 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "A Shape with color of " + color + ", and " + filled ;
+        return "A Shape with color of " + color + ", and " + "filled/not filled: " + filled + '\n';
     }
 }
