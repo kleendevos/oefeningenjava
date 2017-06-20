@@ -6,8 +6,9 @@ public class Shape {
     private Boolean filled;
 
     public Shape() {
-        this.color = "green";
-        this.filled = true;
+        this("red", true);
+        //je kan de grote constructor gebruiken om deze in te vullen!
+        // kan ook this.color = red en this.filled = true
         }
 
     public Shape(String color, Boolean filled) {
@@ -31,8 +32,11 @@ public class Shape {
         this.filled = filled;
     }
 
-    @Override
+
     public String toString() {
-        return "A Shape with color of " + color + ", and " + "filled/not filled: " + filled + '\n';
+        return "A Shape with color of " + color + ", and " + (filled? "not " : "") + "filled in" + '\n';
     }
+
+
+
 }

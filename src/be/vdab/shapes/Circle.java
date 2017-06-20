@@ -1,11 +1,8 @@
 package be.vdab.shapes;
 
-/**
- * Created by vdabcursist on 19/06/2017.
- */
-public class Circle extends Shape{
+public class Circle extends Shape implements GeometricObject {
 
-    private double radius = 1.0;
+    protected double radius;
 
     public Circle(double radius, String color, boolean filled) {
         super(color,filled);
@@ -18,7 +15,7 @@ public class Circle extends Shape{
     }
 
     public Circle () {
-
+        this (1);
     }
 
     public double getRadius() {
@@ -29,15 +26,17 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
-    public void getArea() {
-        double Area = 2*radius*3.14;
-    }
+    public String toString() {
+        return "A Circle with radius " + radius + ", with color " + getColor() + "oppervlakte " + calculateArea()+'\n';    }
 
-    public void getPerimeter() {
-        double perimeter = Math.pow(radius,2)*3.14;
+    @Override
+    public double calculatePerimeter() {
+        return 2*radius*3.14;
     }
 
     @Override
-    public String toString() {
-        return "A Circle with radius " + radius + ", which is a sublass of " + Shape.class + '\n';    }
+    public double calculateArea() {
+        return Math.pow(radius,2)*3.14;
+    }
+
 }

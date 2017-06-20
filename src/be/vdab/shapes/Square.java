@@ -7,28 +7,26 @@ public class Square extends Rectangle {
 
 
 
-   public Square (double side){
-        this.width = side;
-        this.length = side;
+   public Square (double side,String color, boolean filled){
+        super(side,side);
     }
 
-    public Square (double width, String color, boolean filled){
-       super(width,color,filled);
-
+    public Square (double side){
+        super(side,side);
     }
 
-    public double getside () {
+   public double getside () {
         return getWidth();
     }
 
 
     public void setside (double side) {
-       double width = side;
-       double length =side;
+       setWidth(side);
+       setLength(side);
 
     }
 
-    @Override
+
     public String toString() {
         return "A Square with side " + width + ", which is a subclas of " + Rectangle.class + '\n';
     }

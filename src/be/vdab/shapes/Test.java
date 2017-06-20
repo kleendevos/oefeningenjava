@@ -16,7 +16,7 @@ public class Test {
             a.add(new Shape("red", true));
             a.add(new Shape ("blue", true));
             a.add (new Circle(4,"blue", true));
-            a.add(new Square(10,"red",true));
+            a.add(new Square(10.0,"red", true));
 
         }
 
@@ -28,13 +28,15 @@ public class Test {
         Square s = new Square(10);
         Rectangle r = new Rectangle(10,5);
 
-        r.getPerimeter();
-        r.getArea();
+        r.calculateArea();
+        r.calulculatePerimeter();
+        s.calculateArea();
+        s.calulculatePerimeter();
 
-        System.out.println(r.getPerimeter() + "omtrek" + (r.getArea()));
+        System.out.println(s.calulculatePerimeter() + "omtrek" + (s.calculateArea()));
 
-        rondje.getArea();
-        rondje.getPerimeter();
+        rondje.calculateArea();
+        rondje.calculatePerimeter();
 
 
         ArrayList<Circle> c = new ArrayList<Circle>();{

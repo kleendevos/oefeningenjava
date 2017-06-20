@@ -10,6 +10,8 @@ public class Rectangle extends Shape {
 
 
     public Rectangle() {
+        this.width = 1.0;
+        this.length = 1.0;
 
     }
 
@@ -41,14 +43,14 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-    public double getArea() {
-        double area = 2*(length + width) ;
-        return area;
+    public double calculateArea() {
+        return length*width;
+
     }
 
-    public double getPerimeter() {
-        double perimeter = length*width ;
-        return perimeter;
+    public double calulculatePerimeter() {
+        return 2*(length + width);
+
     }
 
     @Override
