@@ -10,7 +10,9 @@ public class TestResizableCircle {
 
         c.resize(10);
 
-        System.out.println("Resize to " + c.resize(10) + " oppervlakte " + c.calculatePerimeter());
+//        System.out.println(c.resize(););
+
+
 
     }
 }

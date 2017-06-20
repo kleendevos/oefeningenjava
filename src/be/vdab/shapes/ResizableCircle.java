@@ -11,8 +11,9 @@ public class ResizableCircle extends Circle implements Resizable {
     }
 
     @Override
-    public double resize(int percentage) {
-        return calculatePerimeter()-(calculatePerimeter()*(percentage/100.0));
+    public void resize(int percentage) {
+        System.out.println(percentage);
     }
+
 
 }
