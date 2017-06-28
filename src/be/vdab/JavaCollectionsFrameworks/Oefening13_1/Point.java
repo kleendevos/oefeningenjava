@@ -8,7 +8,7 @@ public class Point implements Comparable<Point> {
     private double x;
     private double y;
 
-    Point(double x, double y){
+    Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -30,26 +30,15 @@ public class Point implements Comparable<Point> {
     }
 
     public String tostring() {
-        return "(" + "x= " + String.format("%.2f",x) + " and " + "y= " + String.format("%.2f",y) + ")";
+        return "(" + "x= " +  x + " and " + "y= " + y + ")";
 
     }
 
-    public int compareTo (Point point){
-        if (x==point.getX()){
-            if (y > point.getY())
-                return 1;
-            else if (y < point.getY())
-                return -1;
-            else
-                return 0;
+    public int compareTo(Point that) {
+        if (this.x != that.x) {
+            return (int) (this.x - that.x);
+        } else {
+            return (int) (this.y - that.y);
         }
-        else if (x > point.getX())
-            return 1;
-        else
-            return -1;
     }
-
-
-
-
 }
