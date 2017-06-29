@@ -1,11 +1,15 @@
+/*
 package be.vdab.Thread;
 
+*/
 /**
  * Created by vdabcursist on 28/06/2017.
- */
+ *//*
+
 public class Olympics {
 
-    private static final int NUMBER_OF_LANES = 8 ;
+    */
+/*private static final int NUMBER_OF_LANES = 8 ;
 
     public static void main (String [] args){
 
@@ -27,5 +31,8 @@ public class Olympics {
         }
 
 
+
+
     }
-}
+}*/
+

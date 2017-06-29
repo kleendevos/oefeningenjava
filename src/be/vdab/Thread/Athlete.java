@@ -5,12 +5,16 @@ package be.vdab.Thread;
  */
 public class Athlete extends Thread {
     private String name;
+    private Object shot;
 
-    public Athlete(String name1) {
+
+    public Athlete(String name1, Object shot) {
         this.name = name1;
+        this.shot = shot;
     }
 
     public void run (){
+
         int distance = 0;
         int distancewinner = 100;
 
@@ -40,6 +44,11 @@ public class Athlete extends Thread {
         }
     }
 
-
-    }
+    /*private void waitUntilGo() throws IllegalAccessException {
+        synchronized (signal) {
+            try {
+                signal.wait();
+            } catch (InterruptedException e) {
+                throw new IllegalAccessException ();*/
+            }
 
